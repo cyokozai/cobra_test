@@ -10,7 +10,7 @@ ENV GOMODCACHE=/tmp/go-mod-cache
 
 WORKDIR /home/appuser
 
-COPY ./cli /home/appuser/src
+COPY ./cli /home/appuser/cli
 
 RUN go mod init github.com/cyokozai/pvectl && \
     go get gopkg.in/yaml.v3@latest && \
